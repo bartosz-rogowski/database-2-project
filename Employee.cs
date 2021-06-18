@@ -40,11 +40,6 @@ namespace Rogowski_Hierarchy_Project
                     this.Salary
                 )
             );
-            /*Console.WriteLine(
-                this.Path.ToString() + '\t' + this.Path.GetLevel() + '\t' +
-                this.Name + "\t\t" + this.Position + "\t\t" + this.Start_Year + '\t' +
-                (DateTime.Now.Year - this.Start_Year) + '\t' + this.Salary
-            ); */
         }
     }
 }

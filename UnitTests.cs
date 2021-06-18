@@ -61,11 +61,27 @@ namespace CompanyTest
         }
 
         [TestMethod]
-        public void DeleteEmployeeTest()
+        public void Z_DeleteEmployeeTest()
         {
+            //'Z_' is added at the beginning of the test name
+            //because of order execution violation
+            //that may give wrong results
             company.DeleteEmployee("/5/");
             company.LoadAllEmployees();
             Assert.AreEqual(11, company.GetEmployeeList().Count);
+        }
+        
+        [TestMethod]
+        public void DeleteEmployeeTest_ShouldThrowExceptionMessage()
+        {
+            try
+            {
+                company.DeleteEmployee("/89/");
+            }
+            catch (Exception e)
+            {
+                Assert.AreEqual("Such employee does not exist", e.Message);
+            }
         }
 
         [TestMethod]

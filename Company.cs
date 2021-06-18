@@ -24,7 +24,7 @@ namespace Rogowski_Hierarchy_Project
                 "INITIAL CATALOG=Project_Hierarchy; " +
                 "INTEGRATED SECURITY=SSPI;";
         }
-        
+
         //destructor clearing list
         ~Company()
         {
@@ -41,7 +41,7 @@ namespace Rogowski_Hierarchy_Project
         {
             this.employee_list.Clear();
             string cmd = "SELECT Path as [Hierarchy], Name, Position, " +
-                "Start_Year, Salary FROM testhierarchii ORDER BY Path";
+                "Start_Year, Salary FROM Employees ORDER BY Path";
             using (SqlConnection conn = new SqlConnection(this.connection_string))
             {
                 conn.Open();
@@ -70,7 +70,6 @@ namespace Rogowski_Hierarchy_Project
                 "\tWF - Working for [in years]\n\n");
             Console.WriteLine(
                 String.Format("{0,-8} {1,-4} {2,-25} {3,-30} {4,8}{5,8}{6,10}",
-                //String.Format("{0,-6} {1,-6} {2,-25} {3,-20} {4,-18}{5,8}{6,10}",
                 "Path",
                 "L",
                 "Name",
@@ -99,7 +98,7 @@ namespace Rogowski_Hierarchy_Project
         //method adding new employee to the database's table
         public void AddNewEmployee(String Path, String Name, String Position, int Start_Year, float Salary)
         {
-            string cmd = "INSERT INTO testhierarchii VALUES (@path, @name, @position, @start_year, @salary)";
+            string cmd = "INSERT INTO Employees VALUES (@path, @name, @position, @start_year, @salary)";
             using (SqlConnection conn = new SqlConnection(this.connection_string))
             {
                 conn.Open();
@@ -146,7 +145,7 @@ namespace Rogowski_Hierarchy_Project
         //method for clearing all data from the database's table
         public void DeleteAllData()
         {
-            string cmd = "DELETE FROM testhierarchii";
+            string cmd = "DELETE FROM Employees";
             using (SqlConnection conn = new SqlConnection(this.connection_string))
             {
                 conn.Open();
@@ -158,7 +157,9 @@ namespace Rogowski_Hierarchy_Project
         //method for deleting an employee's data from the database's table
         public void DeleteEmployee(String Path)
         {
-            string cmd = "DELETE FROM testhierarchii WHERE Path = @path";
+            string cmd = "SELECT COUNT(*) FROM ( " +
+                "SELECT * FROM Employees WHERE Path.IsDescendantOf(@path) = 1 " +
+                ") as t";
             using (SqlConnection conn = new SqlConnection(this.connection_string))
             {
                 conn.Open();
@@ -166,9 +167,27 @@ namespace Rogowski_Hierarchy_Project
                 {
                     SqlCommand command = new SqlCommand(cmd, conn);
                     command.Parameters.AddWithValue("@path", Path);
-                    command.ExecuteNonQuery();
+                    SqlDataReader datareader = command.ExecuteReader();
+                    datareader.Read();
+                    int count = (int)datareader[0];
+                    datareader.Close();
+                    if (count < 1)
+                        throw new Exception("Such employee does not exist");
+                    else if (count > 1)
+                        throw new Exception("This employee has at least one subordinate!");
+                    else if (count == 1)
+                    {
+                        cmd = "DELETE FROM Employees WHERE Path = @path";
+                        command = new SqlCommand(cmd, conn);
+                        command.Parameters.AddWithValue("@path", Path);
+                        command.ExecuteNonQuery();
+                    }
                 }
                 catch (System.Data.SqlClient.SqlException e)
+                {
+                    throw e;
+                }
+                catch (Exception e)
                 {
                     throw e;
                 }
@@ -180,7 +199,7 @@ namespace Rogowski_Hierarchy_Project
         {
             this.employee_list.Clear();
             string cmd = "SELECT Path as [Hierarchy], Name, Position, " +
-                "Start_Year, Salary FROM testhierarchii WHERE Path = @path";
+                "Start_Year, Salary FROM Employees WHERE Path = @path";
             using (SqlConnection conn = new SqlConnection(this.connection_string))
             {
                 conn.Open();
@@ -220,7 +239,7 @@ namespace Rogowski_Hierarchy_Project
         {
             this.employee_list.Clear();
             string cmd = "SELECT Path as [Hierarchy], Name, Position, " +
-                "Start_Year, Salary FROM testhierarchii WHERE Path.IsDescendantOf(@path) = 1";
+                "Start_Year, Salary FROM Employees WHERE Path.IsDescendantOf(@path) = 1";
             using (SqlConnection conn = new SqlConnection(this.connection_string))
             {
                 conn.Open();
@@ -262,10 +281,10 @@ namespace Rogowski_Hierarchy_Project
         public void DisplayStatisticsForPath(String Path)
         {
             string cmd = @"SELECT MIN(Salary) as min_salary, MAX(Salary) as max_salary, 
-                            CAST(AVG(Salary) as NUMERIC(7, 2)) as avg_salary FROM (
-                                SELECT Path, Salary FROM testhierarchii 
-                                WHERE Path.IsDescendantOf(@path) = 1
-                            ) as t";
+	                        CAST(AVG(Salary) as NUMERIC(7, 2)) as avg_salary FROM (
+		                        SELECT Path, Salary FROM Employees 
+		                        WHERE Path.IsDescendantOf(@path) = 1
+	                        ) as t";
 
             using (SqlConnection conn = new SqlConnection(this.connection_string))
             {
@@ -278,7 +297,7 @@ namespace Rogowski_Hierarchy_Project
                     while (datareader.Read())
                     {
                         Console.WriteLine(
-                            "Minimum salary: " + 
+                            "Minimum salary: " +
                             float.Parse(datareader["min_salary"].ToString()) +
                             "\nMaximum salary: " +
                             float.Parse(datareader["max_salary"].ToString()) +
@@ -300,10 +319,10 @@ namespace Rogowski_Hierarchy_Project
         public void DisplayStatisticsForLevel(int Level)
         {
             string cmd = @"SELECT MIN(Salary) as min_salary, MAX(Salary) as max_salary, 
-                            CAST(AVG(Salary) as NUMERIC(7, 2)) as avg_salary FROM (
-                                SELECT Path, Salary FROM testhierarchii 
-                                WHERE Path.GetLevel() = @level
-                            ) as t";
+	                        CAST(AVG(Salary) as NUMERIC(7, 2)) as avg_salary FROM (
+		                        SELECT Path, Salary FROM Employees 
+		                        WHERE Path.GetLevel() = @level
+	                        ) as t";
 
             using (SqlConnection conn = new SqlConnection(this.connection_string))
             {
@@ -339,14 +358,14 @@ namespace Rogowski_Hierarchy_Project
         //  = - equally
         public void DisplayEmployeesWorkingFor(char sign, int number)
         {
-            String text = "Displaying employees working for #1 "+number.ToString()+" years\n";
+            String text = "Displaying employees working for #1 " + number.ToString() + " years\n";
             this.employee_list.Clear();
             string cmd = @"SELECT Path as [Hierarchy], Name, Position, 
-                            Start_Year, Salary FROM testhierarchii WHERE 
+	                        Start_Year, Salary FROM Employees WHERE 
                             DATEDIFF(year, CONVERT(datetime, CONVERT(varchar, Start_Year)), GETDATE()) ";
 
             if (sign == '>')
-            { 
+            {
                 cmd += "> @number";
                 text = text.Replace("#1", "more than");
             }

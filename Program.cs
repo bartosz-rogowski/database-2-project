@@ -24,8 +24,8 @@ namespace Rogowski_Hierarchy_Project
                         "2 - Add sample prepared data into table\n\n" +
                         "3 - Add new employee into table\n\n" +
                         "4 - Delete all employees from table\n\n" +
-                        "5 - Delete an employee from table\n\n" + 
-                        "6 - Find an employee\n\n" + 
+                        "5 - Delete an employee from table\n\n" +
+                        "6 - Find an employee\n\n" +
                         "7 - Find an employee and their subordinates\n\n" +
                         "8 - Show statistics (min, max, avg salary)\n\n" +
                         "9 - Display employees working for <condition> years\n\n" +
@@ -37,12 +37,12 @@ namespace Rogowski_Hierarchy_Project
                         option = Convert.ToInt32(Console.ReadLine());
                         break;
                     }
-                    catch(Exception)
+                    catch (Exception)
                     {
-                        
+
                     }
                 }
-               
+
                 switch (option)
                 {
                     case 0:
@@ -146,6 +146,10 @@ namespace Rogowski_Hierarchy_Project
                             Console.WriteLine("HINT: Probably data you provided are already removed from" +
                                 " the database or you have given wrong value.");
                         }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e.Message);
+                        }
                         Console.WriteLine("\nPress any key to go back");
                         Console.ReadKey();
                         break;
@@ -195,7 +199,6 @@ namespace Rogowski_Hierarchy_Project
                         catch (System.Data.SqlClient.SqlException)
                         {
                             Console.WriteLine("An error occured.");
-                            //Console.WriteLine("HINT: Probably data you provided are already in the database or you have given wrong type(s).");
                         }
                         Console.WriteLine("\nPress any key to go back");
                         Console.ReadKey();
