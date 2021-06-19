@@ -1,0 +1,7 @@
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\Rogowski_Hierarchy_Project.exe
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\Rogowski_Hierarchy_Project.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\obj\Debug\TestProject.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\obj\Debug\TestProject.pdb

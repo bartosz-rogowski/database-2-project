@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rogowski_Hierarchy_Project", "Rogowski_Hierarchy_Project\Rogowski_Hierarchy_Project.csproj", "{A116E14E-1281-487C-8B73-B12F60C0E272}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{528699AB-C520-4FA4-84B7-6E901A44089B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DEA6F1D1-08F7-4C0A-9CAC-4749892706E4}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		Rogowski_Hierarchy_Project.vsmdi = Rogowski_Hierarchy_Project.vsmdi
+		Rogowski_Hierarchy_Project1.vsmdi = Rogowski_Hierarchy_Project1.vsmdi
+		Rogowski_Hierarchy_Project2.vsmdi = Rogowski_Hierarchy_Project2.vsmdi
+		Rogowski_Hierarchy_Project3.vsmdi = Rogowski_Hierarchy_Project3.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Rogowski_Hierarchy_Project3.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A116E14E-1281-487C-8B73-B12F60C0E272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A116E14E-1281-487C-8B73-B12F60C0E272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A116E14E-1281-487C-8B73-B12F60C0E272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A116E14E-1281-487C-8B73-B12F60C0E272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{528699AB-C520-4FA4-84B7-6E901A44089B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528699AB-C520-4FA4-84B7-6E901A44089B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528699AB-C520-4FA4-84B7-6E901A44089B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528699AB-C520-4FA4-84B7-6E901A44089B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

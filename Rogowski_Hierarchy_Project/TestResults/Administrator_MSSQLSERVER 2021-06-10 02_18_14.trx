@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7b748f1d-df8e-4776-829a-5c202ee1fb69" name="Administrator@MSSQLSERVER 2021-06-10 02:18:14" runUser="MSSQLSERVER\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="33b21a9f-2c38-40b0-a855-2d51da190c94">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestResults\Administrator_MSSQLSERVER 2021-06-10 02_18_14">
+      <DeploymentItem filename="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\Rogowski_Hierarchy_Project\bin\Debug\Rogowski_Hierarchy_Project.exe" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2021-06-10T02:18:14.0020000+02:00" queuing="2021-06-10T02:18:14.5620000+02:00" start="2021-06-10T02:18:14.7010000+02:00" finish="2021-06-10T02:18:15.1020000+02:00" />
+  <TestDefinitions>
+    <UnitTest name="AddNewEmployeeTest_ShouldThrowSqlException" storage="c:\users\administrator\documents\visual studio 2008\projects\rogowski_hierarchy_project\testproject\bin\debug\testproject.dll" id="52341285-5549-ac3d-975d-0a59d459dc23">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="611f9029-c26e-4850-8fd7-87365f38e49d" />
+      <TestMethod codeBase="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CompanyTest.UnitTests, TestProject" name="AddNewEmployeeTest_ShouldThrowSqlException" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="52341285-5549-ac3d-975d-0a59d459dc23" executionId="611f9029-c26e-4850-8fd7-87365f38e49d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="611f9029-c26e-4850-8fd7-87365f38e49d" testId="52341285-5549-ac3d-975d-0a59d459dc23" testName="AddNewEmployeeTest_ShouldThrowSqlException" computerName="MSSQLSERVER" duration="00:00:00.0017739" startTime="2021-06-10T02:18:14.7670000+02:00" endTime="2021-06-10T02:18:14.9660000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

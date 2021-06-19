@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9f9816dd-5449-408a-960b-aba79d982dd2" name="Administrator@MSSQLSERVER 2021-06-10 02:19:27" runUser="MSSQLSERVER\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="33b21a9f-2c38-40b0-a855-2d51da190c94">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestResults\Administrator_MSSQLSERVER 2021-06-10 02_19_27">
+      <DeploymentItem filename="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\Rogowski_Hierarchy_Project\bin\Debug\Rogowski_Hierarchy_Project.exe" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Completed">
+    <Counters total="11" executed="11" passed="11" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2021-06-10T02:19:27.0120000+02:00" queuing="2021-06-10T02:19:27.4440000+02:00" start="2021-06-10T02:19:27.5960000+02:00" finish="2021-06-10T02:19:28.7480000+02:00" />
+  <TestDefinitions>
+    <UnitTest name="FindEmployeeTest_NonExistingEmployee" storage="c:\users\administrator\documents\visual studio 2008\projects\rogowski_hierarchy_project\testproject\bin\debug\testproject.dll" id="913415b4-c74d-3975-61d0-fedb4cd11d77">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="8397f01c-8598-4c44-95fa-5cdadba720d2" />
+      <TestMethod codeBase="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CompanyTest.UnitTests, TestProject" name="FindEmployeeTest_NonExistingEmployee" />
+    </UnitTest>
+    <UnitTest name="FindEmployeeWithSubordinatesTest_ExistingEmployee" storage="c:\users\administrator\documents\visual studio 2008\projects\rogowski_hierarchy_project\testproject\bin\debug\testproject.dll" id="b87028b3-ebd5-a96d-a962-481adeda8187">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="938a35f4-ebdd-4a03-8d10-645db685580b" />
+      <TestMethod codeBase="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CompanyTest.UnitTests, TestProject" name="FindEmployeeWithSubordinatesTest_ExistingEmployee" />
+    </UnitTest>
+    <UnitTest name="AddNewEmployeeTest_ShouldThrowSqlException" storage="c:\users\administrator\documents\visual studio 2008\projects\rogowski_hierarchy_project\testproject\bin\debug\testproject.dll" id="52341285-5549-ac3d-975d-0a59d459dc23">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="47c75863-f257-4d0b-98b1-747438637b77" />
+      <TestMethod codeBase="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CompanyTest.UnitTests, TestProject" name="AddNewEmployeeTest_ShouldThrowSqlException" />
+    </UnitTest>
+    <UnitTest name="DisplayStatisticsForPathTest" storage="c:\users\administrator\documents\visual studio 2008\projects\rogowski_hierarchy_project\testproject\bin\debug\testproject.dll" id="cef19e69-ec75-e38e-edf0-18f16beed367">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="794ba85f-1e11-4f21-9d05-e5ff7dbf2c65" />
+      <TestMethod codeBase="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CompanyTest.UnitTests, TestProject" name="DisplayStatisticsForPathTest" />
+    </UnitTest>
+    <UnitTest name="FindEmployeeWithSubordinatesTest_NonExistingEmployee" storage="c:\users\administrator\documents\visual studio 2008\projects\rogowski_hierarchy_project\testproject\bin\debug\testproject.dll" id="949a777a-6dcc-d287-735f-b9d28b2205fb">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="71506a32-8747-487d-ba64-89e6f2e50a14" />
+      <TestMethod codeBase="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CompanyTest.UnitTests, TestProject" name="FindEmployeeWithSubordinatesTest_NonExistingEmployee" />
+    </UnitTest>
+    <UnitTest name="ZZ_DisplayEmployeesWorkingForTest_ShouldHaveCount3" storage="c:\users\administrator\documents\visual studio 2008\projects\rogowski_hierarchy_project\testproject\bin\debug\testproject.dll" id="80dced3f-1619-e022-5fcc-bbe4637dd65d">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="454eb587-7169-4fc9-9e80-f678a0a6079b" />
+      <TestMethod codeBase="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CompanyTest.UnitTests, TestProject" name="ZZ_DisplayEmployeesWorkingForTest_ShouldHaveCount3" />
+    </UnitTest>
+    <UnitTest name="AddNewEmployeeTest_Right" storage="c:\users\administrator\documents\visual studio 2008\projects\rogowski_hierarchy_project\testproject\bin\debug\testproject.dll" id="55e76044-6fc2-5b1f-bc89-5efb924c6935">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="bce94cdc-846e-4bd5-8433-615ccbc0ccfb" />
+      <TestMethod codeBase="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CompanyTest.UnitTests, TestProject" name="AddNewEmployeeTest_Right" />
+    </UnitTest>
+    <UnitTest name="DeleteEmployeeTest" storage="c:\users\administrator\documents\visual studio 2008\projects\rogowski_hierarchy_project\testproject\bin\debug\testproject.dll" id="1f38e7a1-404b-3569-4b7b-82fd8b0c949e">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="b701dc14-f61b-4641-aed3-31d32a936ef2" />
+      <TestMethod codeBase="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CompanyTest.UnitTests, TestProject" name="DeleteEmployeeTest" />
+    </UnitTest>
+    <UnitTest name="DisplayStatisticsForLevelTest" storage="c:\users\administrator\documents\visual studio 2008\projects\rogowski_hierarchy_project\testproject\bin\debug\testproject.dll" id="e820ed2a-e529-553a-c59c-2db869663514">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="29689967-3d7b-46b5-b6ce-ea8b6b423baa" />
+      <TestMethod codeBase="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CompanyTest.UnitTests, TestProject" name="DisplayStatisticsForLevelTest" />
+    </UnitTest>
+    <UnitTest name="FindEmployeeTest_ExistingEmployee" storage="c:\users\administrator\documents\visual studio 2008\projects\rogowski_hierarchy_project\testproject\bin\debug\testproject.dll" id="af6cbc71-8fa2-5fe4-07e3-0e1a7174a482">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="c3743359-e34b-4402-931a-a10bc0f77b36" />
+      <TestMethod codeBase="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CompanyTest.UnitTests, TestProject" name="FindEmployeeTest_ExistingEmployee" />
+    </UnitTest>
+    <UnitTest name="AA_LoadAllEmployeesTest_ShouldHaveCount11" storage="c:\users\administrator\documents\visual studio 2008\projects\rogowski_hierarchy_project\testproject\bin\debug\testproject.dll" id="38b36908-0a55-4f2d-8c66-bb497565a1d1">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="ff47751a-e50c-4a5b-8b2d-51adc4315c6a" />
+      <TestMethod codeBase="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CompanyTest.UnitTests, TestProject" name="AA_LoadAllEmployeesTest_ShouldHaveCount11" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1f38e7a1-404b-3569-4b7b-82fd8b0c949e" executionId="b701dc14-f61b-4641-aed3-31d32a936ef2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38b36908-0a55-4f2d-8c66-bb497565a1d1" executionId="ff47751a-e50c-4a5b-8b2d-51adc4315c6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52341285-5549-ac3d-975d-0a59d459dc23" executionId="47c75863-f257-4d0b-98b1-747438637b77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="55e76044-6fc2-5b1f-bc89-5efb924c6935" executionId="bce94cdc-846e-4bd5-8433-615ccbc0ccfb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="80dced3f-1619-e022-5fcc-bbe4637dd65d" executionId="454eb587-7169-4fc9-9e80-f678a0a6079b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="913415b4-c74d-3975-61d0-fedb4cd11d77" executionId="8397f01c-8598-4c44-95fa-5cdadba720d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="949a777a-6dcc-d287-735f-b9d28b2205fb" executionId="71506a32-8747-487d-ba64-89e6f2e50a14" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="af6cbc71-8fa2-5fe4-07e3-0e1a7174a482" executionId="c3743359-e34b-4402-931a-a10bc0f77b36" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b87028b3-ebd5-a96d-a962-481adeda8187" executionId="938a35f4-ebdd-4a03-8d10-645db685580b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cef19e69-ec75-e38e-edf0-18f16beed367" executionId="794ba85f-1e11-4f21-9d05-e5ff7dbf2c65" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e820ed2a-e529-553a-c59c-2db869663514" executionId="29689967-3d7b-46b5-b6ce-ea8b6b423baa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b701dc14-f61b-4641-aed3-31d32a936ef2" testId="1f38e7a1-404b-3569-4b7b-82fd8b0c949e" testName="DeleteEmployeeTest" computerName="MSSQLSERVER" duration="00:00:00.0148344" startTime="2021-06-10T02:19:27.6730000+02:00" endTime="2021-06-10T02:19:28.1720000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ff47751a-e50c-4a5b-8b2d-51adc4315c6a" testId="38b36908-0a55-4f2d-8c66-bb497565a1d1" testName="AA_LoadAllEmployeesTest_ShouldHaveCount11" computerName="MSSQLSERVER" duration="00:00:00.0027865" startTime="2021-06-10T02:19:28.1780000+02:00" endTime="2021-06-10T02:19:28.1870000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="47c75863-f257-4d0b-98b1-747438637b77" testId="52341285-5549-ac3d-975d-0a59d459dc23" testName="AddNewEmployeeTest_ShouldThrowSqlException" computerName="MSSQLSERVER" duration="00:00:00.0039843" startTime="2021-06-10T02:19:28.1920000+02:00" endTime="2021-06-10T02:19:28.2030000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bce94cdc-846e-4bd5-8433-615ccbc0ccfb" testId="55e76044-6fc2-5b1f-bc89-5efb924c6935" testName="AddNewEmployeeTest_Right" computerName="MSSQLSERVER" duration="00:00:00.0617580" startTime="2021-06-10T02:19:28.2220000+02:00" endTime="2021-06-10T02:19:28.2920000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="454eb587-7169-4fc9-9e80-f678a0a6079b" testId="80dced3f-1619-e022-5fcc-bbe4637dd65d" testName="ZZ_DisplayEmployeesWorkingForTest_ShouldHaveCount3" computerName="MSSQLSERVER" duration="00:00:00.0119714" startTime="2021-06-10T02:19:28.2980000+02:00" endTime="2021-06-10T02:19:28.3160000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <StdOut>Displaying employees working for exactly 11 years
+
+Legend:
+	L - Level
+	WS - Working since [year]
+	WF - Working for [in years]
+
+
+Path     L    Name                      Position                             WS      WF  Salary $
+-------------------------------------------------------------------------------------------------
+/2/      1    Tyler Joseph              HR Manager                         2010      11      7000</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8397f01c-8598-4c44-95fa-5cdadba720d2" testId="913415b4-c74d-3975-61d0-fedb4cd11d77" testName="FindEmployeeTest_NonExistingEmployee" computerName="MSSQLSERVER" duration="00:00:00.0040505" startTime="2021-06-10T02:19:28.3210000+02:00" endTime="2021-06-10T02:19:28.3310000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <StdOut>Legend:
+	L - Level
+	WS - Working since [year]
+	WF - Working for [in years]
+
+
+Path     L    Name                      Position                             WS      WF  Salary $
+-------------------------------------------------------------------------------------------------</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="71506a32-8747-487d-ba64-89e6f2e50a14" testId="949a777a-6dcc-d287-735f-b9d28b2205fb" testName="FindEmployeeWithSubordinatesTest_NonExistingEmployee" computerName="MSSQLSERVER" duration="00:00:00.0044908" startTime="2021-06-10T02:19:28.3360000+02:00" endTime="2021-06-10T02:19:28.3460000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <StdOut>Legend:
+	L - Level
+	WS - Working since [year]
+	WF - Working for [in years]
+
+
+Path     L    Name                      Position                             WS      WF  Salary $
+-------------------------------------------------------------------------------------------------</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c3743359-e34b-4402-931a-a10bc0f77b36" testId="af6cbc71-8fa2-5fe4-07e3-0e1a7174a482" testName="FindEmployeeTest_ExistingEmployee" computerName="MSSQLSERVER" duration="00:00:00.0035536" startTime="2021-06-10T02:19:28.3510000+02:00" endTime="2021-06-10T02:19:28.3600000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <StdOut>Legend:
+	L - Level
+	WS - Working since [year]
+	WF - Working for [in years]
+
+
+Path     L    Name                      Position                             WS      WF  Salary $
+-------------------------------------------------------------------------------------------------
+/1/      1    Billie Eilish             Financial Manager                  2015       6      8000</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="938a35f4-ebdd-4a03-8d10-645db685580b" testId="b87028b3-ebd5-a96d-a962-481adeda8187" testName="FindEmployeeWithSubordinatesTest_ExistingEmployee" computerName="MSSQLSERVER" duration="00:00:00.0037479" startTime="2021-06-10T02:19:28.3650000+02:00" endTime="2021-06-10T02:19:28.3740000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <StdOut>Legend:
+	L - Level
+	WS - Working since [year]
+	WF - Working for [in years]
+
+
+Path     L    Name                      Position                             WS      WF  Salary $
+-------------------------------------------------------------------------------------------------
+/4/      1    Ebba Tove Elsa Nilsson    Technical Manager                  2013       8      7000
+/4/1/    2    Alma-Sofia Miettinen      Technical Senior Manager           2016       5      6000
+/4/1/1/  3    Zara Maria Larsson        Technical Assistant Manager        2016       5      4000</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="794ba85f-1e11-4f21-9d05-e5ff7dbf2c65" testId="cef19e69-ec75-e38e-edf0-18f16beed367" testName="DisplayStatisticsForPathTest" computerName="MSSQLSERVER" duration="00:00:00.0040102" startTime="2021-06-10T02:19:28.3790000+02:00" endTime="2021-06-10T02:19:28.3890000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="29689967-3d7b-46b5-b6ce-ea8b6b423baa" testId="e820ed2a-e529-553a-c59c-2db869663514" testName="DisplayStatisticsForLevelTest" computerName="MSSQLSERVER" duration="00:00:00.0052637" startTime="2021-06-10T02:19:28.3940000+02:00" endTime="2021-06-10T02:19:28.4550000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

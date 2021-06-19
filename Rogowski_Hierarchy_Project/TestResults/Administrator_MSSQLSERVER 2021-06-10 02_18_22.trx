@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2b271530-aa3c-436e-854b-623c3d8f957a" name="Administrator@MSSQLSERVER 2021-06-10 02:18:22" runUser="MSSQLSERVER\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="33b21a9f-2c38-40b0-a855-2d51da190c94">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestResults\Administrator_MSSQLSERVER 2021-06-10 02_18_22">
+      <DeploymentItem filename="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\Rogowski_Hierarchy_Project\bin\Debug\Rogowski_Hierarchy_Project.exe" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2021-06-10T02:18:22.2980000+02:00" queuing="2021-06-10T02:18:23.0570000+02:00" start="2021-06-10T02:18:23.5230000+02:00" finish="2021-06-10T02:18:24.0100000+02:00" />
+  <TestDefinitions>
+    <UnitTest name="ZZ_DisplayEmployeesWorkingForTest_ShouldHaveCount3" storage="c:\users\administrator\documents\visual studio 2008\projects\rogowski_hierarchy_project\testproject\bin\debug\testproject.dll" id="80dced3f-1619-e022-5fcc-bbe4637dd65d">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="ce3ccf2f-7e35-43db-a129-8fc70d40cfb6" />
+      <TestMethod codeBase="C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Rogowski_Hierarchy_Project\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CompanyTest.UnitTests, TestProject" name="ZZ_DisplayEmployeesWorkingForTest_ShouldHaveCount3" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="80dced3f-1619-e022-5fcc-bbe4637dd65d" executionId="ce3ccf2f-7e35-43db-a129-8fc70d40cfb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ce3ccf2f-7e35-43db-a129-8fc70d40cfb6" testId="80dced3f-1619-e022-5fcc-bbe4637dd65d" testName="ZZ_DisplayEmployeesWorkingForTest_ShouldHaveCount3" computerName="MSSQLSERVER" duration="00:00:00.0085945" startTime="2021-06-10T02:18:23.6520000+02:00" endTime="2021-06-10T02:18:23.8660000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <StdOut>Displaying employees working for more than 10 years
+
+Legend:
+	L - Level
+	WS - Working since [year]
+	WF - Working for [in years]
+
+
+Path     L    Name                      Position                             WS      WF  Salary $
+-------------------------------------------------------------------------------------------------
+/        0    Taylor Alison Swift       CEO                                2007      14     13000
+/2/      1    Tyler Joseph              HR Manager                         2010      11      7000
+/3/      1    Selena Gomez              Administration Manager             2009      12      8000</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
