@@ -15,6 +15,8 @@ Employees data (such as name, position etc.) are elements of mentioned hierarchi
 |   `Salary`   |    `numeric(7, 2) NOT NULL`   |                   salary (in $)                   |
 >Table: Structure of *Employee* table.
 
+API also have some basic unit tests written with *Visual Studio 2008 IDE*. 
+
 ## Screenshots
 
 - Functionalities are available from console:
