@@ -32,3 +32,6 @@ API also have some basic unit tests written with *Visual Studio 2008 IDE*.
 - Passed tests:
 
 ![tests](/screenshots/testy.png)
+>---
+
+***More information are included in documentation pdf file (in polish).***
